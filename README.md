@@ -1,7 +1,6 @@
 #  Restaurant Menu Website
 
 This is a stylish, static **Restaurant Menu website** built using **HTML, CSS, and JavaScript**.
-
 It showcases various dishes with images, categorized as Breakfast, Lunch, and Dinner.
 
 ## Features
