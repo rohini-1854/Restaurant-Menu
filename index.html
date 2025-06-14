@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="bluecover.jpg">
+    <title>Rohini Restaurant</title>
+    <!-- Favicon for Tab Icon -->
+    <link rel="icon" href="https://img.icons8.com/comic/100/restaurant.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css"> <!-- Linked CSS -->
+
+</head>
+<body>
+    <header class="top">
+        <h1 class="head">🍽️ WELCOME TO ROHINI RESTAURANT </h1>
+    </header>
+
+    <section>
+        <nav>
+            <marquee><h2 style="color: rgb(255, 0, 0)">Hurry up 50% offer will end soon</h2></marquee>
+        </nav>
+
+        <p style="text-align: center; font-weight: bold; color: rgb(68, 77, 77); text-shadow: -1px -1px 0 rgb(212, 212, 212), 1px 1px 0 rgb(133, 185, 214); font-size: larger;">🔍 Click on "Breakfast", "Lunch", or "Dinner" to view the menu image!</p>
+
+        <article>
+          <div class="table-wrapper">
+            <div class="dinner-bg"></div>
+            <table class="menu-table">
+                <tr>
+                    <th><a href="javascript:void(0);" onclick="openModal('breakfast')"> 🥞 Breakfast</a></th>
+                    <th><a href="javascript:void(0);" onclick="openModal('lunch')"> 🍛 Lunch</a></th>
+                    <th><a href="javascript:void(0);" onclick="openModal('dinner')">🍲 Dinner</a></th>
+
+                </tr>    
+                <tr>
+                    <td class="breakfast-col">Idli-Sambar</td>
+                    <td class="lunch-col">Andhra-Meals</td>
+                    <td class="dinner-col">Butter-Naan</td>
+                </tr>
+                <tr >
+                    <td class="breakfast-col">Masala-Dosa</td>
+                    <td class="lunch-col">chicken-Dum Biriyani</td>
+                    <td class="dinner-col">Parotta-Gravy</td>
+                </tr>
+                <tr>
+                    <td class="breakfast-col">Ven-Pongal</td>
+                    <td class="lunch-col">Chiken-Mandhi</td>
+                    <td class="dinner-col">Chicken Fried-Rice</td>
+                </tr>
+                <tr>
+                    <td class="breakfast-col">Poori-Masala</td>
+                    <td class="lunch-col">Tandoori/Grill</td>
+                    <td class="dinner-col">Paneer-Masala</td>
+                </tr>
+            </table>
+          </div>  
+
+  <div id="breakfast" class="modal">
+     <div class="modal-content">
+      <span class="close" onclick="closeModal('breakfast')">&times;</span>
+      <h2>🥞 Breakfast Menu</h2><br>
+      <div class="modal-images">
+         <img src="idli.jpg" alt="Idli">
+         <img src="Masala-Dosa.jpg" alt="Dosa">
+         <img src="pongal.jpg" alt="Pongal">
+         <img src="poori.avif" alt="Poori">
+      </div>   
+    </div>
+  </div>
+
+  <div id="lunch" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('lunch')">&times;</span>
+      <h2>🍛 Lunch Menu</h2><br>
+      <div class="modal-images">
+          <img src="dumbiriyani.webp" alt="Biryani">
+          <img src="Andhrameals.jpeg" alt="Meals">
+          <img src="Mandii.jpg" alt="Mandhi">
+          <img src="Tandoori-Chicken.jpg" alt="Mandhi">
+      </div>    
+    </div>
+  </div>
+
+  <div id="dinner" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('dinner')">&times;</span>
+      <h2>🍲 Dinner Menu</h2><br>
+      <div class="modal-images">
+         <img src="Butternaan.jpg" alt="Butter Naan">
+         <img src="parota.webp" alt="Parotta">
+         <img src="friedrice.jpg" alt="Mandhi">
+         <img src="panner Tikka.jpg" alt="Paneer Masala">
+      </div>
+    </div>
+  </div>
+
+            <div class="about">
+                <h1><span style="color:rgb(52, 227, 227);">100 + </span> Branches    <span style="color:rgb(52, 227, 227);">1000 + </span>  Dishes</h1>
+                <p><span style="color:rgb(52, 227, 227); font-weight: bold;"> Unlimited </span> Offer on Sunday</p>
+                <p> Happy <span style="color:rgb(52, 227, 227); font-weight: bold;"> Customers</span>  Everywhere</p>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <h1 class="foot">Enjoy Your Food</h1>
+    </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

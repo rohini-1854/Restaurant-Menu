@@ -1,0 +1,232 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  text-align: center;
+  border-top: none;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),url('wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    filter: contrast(1.1);
+}
+.head, .foot, .about h1, .about p {
+    color: white;
+    text-shadow: 1px 1px 2px black; /* Optional: adds outline to text */
+}
+
+.top {
+  background-color: rgb(52, 227, 227);
+  height: 80px;
+  margin-top: 0;
+  
+}
+
+.head {
+    color: white;
+    font-size: 28px;
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;     /* vertical centering */
+    height: 100%;            /* important for flex centering to work */
+    margin-top: 0;
+}
+
+
+.foot {
+  background-color: rgb(52, 227, 227);
+  height: 80px;
+  color: white;
+  display: flex;
+  align-items: center;  /* vertical center */
+  justify-content: center;  /* horizontal center */
+  font-size: 30px;
+  font-weight: bold;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+
+.table-wrapper {
+  margin: 40px auto; /* Adds top/bottom space and centers the table horizontally */
+  max-width: 90%;    /* Optional: limits table width */
+}
+
+th {
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6600;
+    text-shadow: 1px 1px #000;
+    cursor: pointer;
+}
+
+th, td {
+    width: 33.33%;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid rgb(52, 227, 227);
+    background-color: rgb(249, 211, 150);
+    opacity: 0.7;
+    font-weight: bold; /* Bold text */
+    text-shadow: 1px 1px 3px rgba(73, 73, 73, 0.3); /* Soft shadow */
+    font-size: 18px;   /* Optional: make font slightly bigger */
+    color: #20464a;    /* Optional: set text color */
+}
+
+a {
+    color: rgb(72, 221, 221);
+}
+
+th a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 60, 90);
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    display: block;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+th a:hover {
+    background-color: rgb(52, 227, 227);
+    color: white;
+    transform: scale(1.05);
+}
+.about {
+    text-align: center;
+    
+}
+
+.about h1 {
+    font-size: 22px;
+    font-size: 22px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .head {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    .foot {
+        font-size: 24px;
+    }
+
+    th, td {
+        font-size: 12px;
+    }
+
+    .about h1 {
+        font-size: 16px;
+    }
+
+    marquee h2 {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 601px) {
+    .head {
+        font-size: 28px;
+    }
+
+    .foot {
+        font-size: 25px;
+    }
+
+    th, td {
+        font-size: 22px;
+    }
+
+    .about h1 {
+        font-size: 22px;
+    }
+}
+
+
+
+    /* Modal Styling */
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    justify-content: center;     /* center horizontally */
+    align-items: center;         /* center vertically */
+}
+
+.modal.show {
+    visibility: visible;
+    opacity: 1;
+}
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 90%;
+}
+
+.modal-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ✅ 2 columns */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.modal-content img:hover {
+  transform: scale(1.05);
+}
+
+.modal-images img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.modal-images img:hover {
+  transform: scale(1.05);
+}
+
+
+
+.close {
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+}
