@@ -1,14 +1,12 @@
 # Restaurant-Menu
 HTML-CSS-JS using simple project
-# Restaurant-Menu
-HTML-CSS-JS using simple project
-# 🍽️ Restaurant Menu Website
+#  Restaurant Menu Website
 
 This is a stylish, static **Restaurant Menu website** built using **HTML, CSS, and JavaScript**.
 
 It showcases various dishes with images, categorized as Breakfast, Lunch, and Dinner.
 
-## 🌟 Features
+## Features
 
 - Responsive and visually appealing layout
 - Food categories with high-quality images
@@ -43,5 +41,5 @@ Restaurantmenu/
   
 ##  Created by
 
-Rohini 💖  
+Rohini   
 GitHub: [rohini-1854](https://github.com/rohini-1854)
