@@ -1,5 +1,3 @@
-# Restaurant-Menu
-HTML-CSS-JS using simple project
 #  Restaurant Menu Website
 
 This is a stylish, static **Restaurant Menu website** built using **HTML, CSS, and JavaScript**.
